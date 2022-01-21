@@ -57,7 +57,7 @@ bool MyApp::OnInit()
 MyFrame::MyFrame(const wxString& title)
   : wxFrame(NULL, wxID_ANY, title)
 {
-  SetIcon(wxICON(sample));
+  //SetIcon(wxICON(sample));
   wxMenu *fileMenu = new wxMenu;
   wxMenu *helpMenu = new wxMenu;
   helpMenu->Append(HELP_ABOUT, _T("&About...\tF1"),
