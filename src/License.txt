@@ -1,0 +1,10 @@
+The C++ source code(main.cpp) is from a website below : 
+https://www.informit.com/articles/article.aspx?p=606222
+
+You can freely use this software or any part of the open souce if you agree that
+nobody is responsible for your doing that.
+
+You can do whatever you want with this software or the opensource at your own
+responsibility.
+
+Jeonghum
