@@ -1,0 +1,15 @@
+
+if isdirectory('/usr/include/wx-3.1-unofficial')
+  set path+=/usr/include/wx-3.1-unofficial
+endif
+
+if filereadable('/usr/include/wx-3.1-unofficial/cscope.out')
+  set nocsverb
+  cs add /usr/include/wx-3.1-unofficial/cscope.out
+  set csverb
+endif
+
+if filereadable('/usr/include/wx-3.1-unofficial/tags')
+  set tags+=/usr/include/wx-3.1-unofficial/tags
+endif
+
