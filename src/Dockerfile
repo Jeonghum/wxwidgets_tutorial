@@ -31,7 +31,7 @@ RUN mkdir -p /opt
 COPY tutorialpkg-0.1.1-Linux.deb /opt
 RUN dpkg -i /opt/tutorialpkg-0.1.1-Linux.deb
 
-CMD tutorial
+CMD [ "tutorial", "", "" ]
 
 # Build the docker image like this:
 #   docker build -t tutorial:0.1 .
@@ -39,5 +39,5 @@ CMD tutorial
 # Once the image is created, test tutorial like this:
 #   xhost +local:
 #   XSOCK=/tmp/.X11-unix
-#   docker run -v $XSOCK:$XSOCK tutorial:0.1
+#   docker run -v $XSOCK:$XSOCK jumogehn/tutorial:0.1
 
