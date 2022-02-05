@@ -3,10 +3,8 @@ The program tutorial or tutorial.exe would run on Windows, Ubuntu and their
 installers install them on Windows and Ubuntu.
 
 You can try the program tutorial without building or installing anything on
-Ubuntu/Linux unless you have docker installed.
+Ubuntu/Linux unless you have docker installed. (Only tested with Ubuntu 20.04):
 
-Anyone can test jumogehn/tutorial like this on Ubuntu/Linux(Only tested with
-Ubuntu 20.04):
  # xhost +local:
  # XSOCK=/tmp/.X11-unix
  # docker run -v $XSOCK:$XSOCK jumogehn/tutorial:0.1
