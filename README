@@ -11,12 +11,6 @@ Ubuntu 20.04):
  # XSOCK=/tmp/.X11-unix
  # docker run -v $XSOCK:$XSOCK jumogehn/tutorial:0.1
 
-Your/tutorial can be built if you have an account in dockerhub.com:
- # docker build -t my/tutorial:0.1 .
-
-Your/tutorial can be built if you DO NOT have an account in dockerhub.com:
- # docker build -t tutorial:0.1 .
-
 More usage guide for this project is described on wiki:
  # https://github.com/jumogehn/wxwidgets_tutorial/wiki
 
