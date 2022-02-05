@@ -1,5 +1,9 @@
 FROM ubuntu:20.04
-LABEL description="Tutorial Application"
+
+LABEL email="jumogehn@gmail.com"
+LABEL version="0.1"
+LABEL description="Contains basic WxWidgets Application - tutorial. You can use this image as a base image for your WxWidgets application."
+
 ENV DEBIAN_FRONTEND=noninteractive
 ENV DISPLAY :0
 
@@ -33,11 +37,14 @@ RUN dpkg -i /opt/tutorialpkg-0.1.1-Linux.deb
 
 CMD [ "tutorial", "", "" ]
 
-# Build the docker image like this:
-#   docker build -t tutorial:0.1 .
-
-# Once the image is created, test tutorial like this:
+# Anyone can test jumogehn/tutorial like this on Ubuntu 20.04:
 #   xhost +local:
 #   XSOCK=/tmp/.X11-unix
 #   docker run -v $XSOCK:$XSOCK jumogehn/tutorial:0.1
+
+# Your/tutorial can be built if you have an account in dockerhub.com:
+#   docker build -t my/tutorial:0.1 .
+
+# tutorial can be built if you DO NOT have an account in dockerhub.com:
+#   docker build -t tutorial:0.1 .
 
